@@ -1,29 +1,42 @@
 {
   "expo": {
-    "name": "truco-score",
+    "name": "Placar de Truco",
     "slug": "truco-score",
+    "scheme": "truco-score",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
+      "backgroundColor": "#111827",
+      "updates": {
+        "fallbackToCacheTimeout": 0
+      },
+      "assetBundlePatterns": [
+        "**/*"
+      ],
+      "ios": {
+        "supportsTablet": false
+      },
+      "android": {
+        "edgeToEdgeEnabled": true,
+        "package": "com.seunome.trucoscore",
+        "adaptiveIcon": {
+          "foregroundImage": "./assets/adaptive-icon.png",
+          "backgroundColor": "#111827"
+        }
+      },
+      "plugins": [
+        [
+          "react-native-google-mobile-ads",
+          {
+            "androidAppId": "ca-app-pub-3940256099942544~3347511713"
+          }
+        ]
+      ]
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.anonymous.trucoscore"
     }
   }
 }
