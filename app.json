@@ -37,6 +37,11 @@
     },
     "android": {
       "package": "com.anonymous.trucoscore"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a451fcf5-4c45-4f5c-a07d-84a5bb3110d4"
+      }
     }
   }
 }
